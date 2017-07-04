@@ -32,4 +32,7 @@ COPY google-chrome.sh /usr/bin/google-chrome
 
 RUN chmod +x /usr/bin/google-chrome
 
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
 CMD ["/bin/bash"]
