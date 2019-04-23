@@ -16,9 +16,9 @@ RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable 
 RUN apt-get update && apt-get install -y \
   google-chrome-stable
 
-RUN mkdir -p /opt/firefox/55.0.3
-RUN curl -SL https://ftp.mozilla.org/pub/firefox/releases/55.0.3/linux-x86_64/en-US/firefox-55.0.3.tar.bz2 \
-  | tar -xjC /opt/firefox/55.0.3
+RUN mkdir -p /opt/firefox/66.0.3
+RUN curl -SL https://ftp.mozilla.org/pub/firefox/releases/66.0.3/linux-x86_64/en-US/firefox-66.0.3.tar.bz2 \
+  | tar -xjC /opt/firefox/66.0.3
 
 COPY firefox.sh /usr/bin/firefox
 
