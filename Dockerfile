@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
   curl \
   bzip2 \
   libgtk-3-dev \
+  libdbus-glib-1-2 \
   wget
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
