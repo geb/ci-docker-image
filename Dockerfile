@@ -15,6 +15,7 @@ RUN apt-get install -y \
   wget \
   gnupg \
   firefox \
+  firefox-geckodriver \
   chromium \
   chromium-driver
 RUN apt-get clean
